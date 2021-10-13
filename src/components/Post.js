@@ -25,13 +25,12 @@ export function Post(){
           content: res.data
          }))
       })
-      .catch((error)=>{
+      .catch(error => {
         setPostData(prev => ({
           ...prev,
           reqStatus: 'failed',
           error
          }))
-
       })
   }
 
